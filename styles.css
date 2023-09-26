@@ -1,0 +1,187 @@
+/* Define the color palette variables */
+:root {
+  --primary-bg-color: #002147; /* Dark blue background */
+  --primary-text-color: #ffffff; /* White text color */
+  --heading-color: #ff6b6b; /* Heading color (red) */
+  --link-color: #45aaf2; /* Link color (blue) */
+  --section-bg-color: #f0f0f0; /* Light gray background for sections */
+  --project-bg-color: #1a1a1a; /* Dark background for projects */
+  --contact-bg-color: #444444; /* Dark gray background for contact section */
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: blue; /* Set link color to blue */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg-color); /* Dark blue background */
+  color: var(--primary-text-color); /* White text color */
+}
+
+h1, h2, h3 {
+  color: var(--heading-color); /* Heading color (red) */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333; /* Dark gray header background */
+  padding: 20px;
+  border-bottom: 1px solid #ddd; /* Light gray border at the bottom */
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-text-color); /* Navigation link text color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--link-color); /* Navigation link hover color (blue) */
+}
+
+/* Section Styles */
+section {
+  padding: 40px;
+}
+
+#projects {
+  background-color: var(--project-bg-color); /* Dark background for projects section */
+  color: var(--primary-text-color); /* Text color for projects section */
+}
+/* Project Sections */
+.project {
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: var(--primary-text-color); /* Project text color */
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+/* Add this CSS for the side-by-side layout */
+.project-content {
+  display: flex;
+  flex-direction: row; /* Display items side by side */
+  align-items: center; /* Vertically center align items */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.project-content p {
+  flex-grow: 1; /* Allow text to grow and fill remaining space */
+ 
+}
+
+.project-content img {
+  margin-left: 20px; /* Add spacing between text and image */
+}
+
+
+#project1{
+
+  background-color: #444444;
+}
+#project2{
+  background-color: #444444;
+}
+#project3{
+  background-color: #444444;
+}
+#project4{
+  background-color: #444444;
+}
+#project5{
+  background-color: #444444;
+}
+#project6{
+  background-color: #444444;
+}
+#project7{
+  background-color: #444444;
+}
+#project8{
+  background-color: #444444;
+}
+#project9{
+  background-color: #444444;
+}
+
+
+
+#about {
+  background-color: #444444; /* Light gray background for about section */
+  color: var(--primary-text-color); /* Text color for the about section */
+}
+
+
+
+#skills{
+  background-color: var(--contact-bg-color);
+}
+
+#education{
+
+  background-color: var(--contact-bg-color);
+}
+
+
+/* Contact Section Styles */
+#contact {
+ background-color:  #1a1a1a; /* Dark gray background color for contact section */
+  padding: 40px;
+  color: var(--primary-text-color); /* Text color for contact section */
+}
+
+footer {
+  background-color: var(--project-bg-color);  /* Dark background for footer */
+  color: var(--primary-text-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+}
