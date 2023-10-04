@@ -2,34 +2,49 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta>
   <title>Mohd Anam, AR/VR developer</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media_query.css">
 </head>
 <body>
-  <header>
-    <h1>Mohd Anam</h1>
-    <!--img src="images/Anam.jpg " height="150" width="200"-->
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <h3>Portfolio</h3> 
+      <nav>
+        <h4><a href="#about">About</a></h4>
+        <h4><a href="#projects">Projects</a></h4>
+        <h4><a href="#skills">Skills</a></h4>
+        <h4><a href="#education">Education</a></h4>
+        <h4><a href="#contact">Contact</a></h4>
+      </nav>
+    </header>
+    <div class ="intro">
+      <div class = "row">
+        <div class="column-1">
+          <p>AR/VR Devloper</p>
+          <h1>Hi,<br>  I'm Mohd <span > Anam</span> </h1>
+          <a href="Pictures/Mohd Anam resume 2023.pdf" download =""><button class ="d-button"><b>Download CV<b></button></a>
+        </div>
+        <div class = "column-2">
+          <div class ="image-container">
+           <img src="Pictures/Anam.jpg" >
+          </div>
+        </div>
+      </div> 
+    </div>
 
-  <section id="about">
+
+  <section  id="about">
     <h2>About Me</h2>
-    <p>
-      I am an AR/VR developer passionate about creating immersive experiences. With expertise in AR/VR development, 
-      I am dedicated to pushing the boundaries of technology.
-    </p>
-  </section>
+    <p class="about-box" >
+      I'm an AR/VR developer driven by a passion for crafting immersive experiences. With expertise in AR/VR development, my mission is to push the boundaries of technology. 
+      My journey as an AR developer has been filled with exciting projects that have expanded my understanding of the incredible potential of AR. I firmly believe in the power of technology to enhance our lives, and through my work, 
+      I aim to create extraordinary experiences that inspire and captivate, pushing the frontiers of what's possible in the world of AR and VR.
+    </p> 
+    </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>Projects <style> </style></h2>
 
     <a href="project1.html" target="_blank">
     <section id="project1" class="project">
@@ -39,11 +54,10 @@
           I developed an Augmented Reality application which focuses on augmenting 3D models by scanning related to alphabet marker.
            It creates a more engaging learning experience, and with such an ecosystem, students become more engaged in their learning 
            that will ultimately boost the number of students in school.
-        </p>
-        <img src="photos/StartScreen.png" height="200" width="300">
+         </p>
+        <img src="Pictures/Alphabet apple.jpg" height="200" width="300" style="border-radius: 10px;" >      
       </div>
-      <!-- Add screenshots, videos, or a demo here -->
-      <img src="" alt="" srcset="">
+      <button class="see-more-button">See More</button>
     </section>
     </a>
     
@@ -54,11 +68,11 @@
       <p>
         I developed a marker-based AR app centered around the Hindi Varnmala alphabet. By scanning related markers, 
         it augments 3D models for a captivating learning experience. This app encourages active student engagement, 
-        leading to increased enrollment and enhanced learning outcomes.
+        leading to increased enrollment and enhanced learning outcomes. 
       </p>
-      <img src="photos/Duck1.jpg" height="200" width="300">
-      <!-- Add screenshots, videos, or a demo here -->
-      </div>
+      <img src="Pictures/hindi varnamala lady pic.jpg" height="200" width="300" style="border-radius: 10px;" >
+    </div>
+    <button class="see-more-button">See More</button>
     </section>
     </a>
 
@@ -69,134 +83,133 @@
       <p>
         I designed an innovative AR app that enhances learning through augmented reality by displaying multiple 3D models of objects associated with a specific letter.
          For instance, when scanning the letter "A," a 3D model of an airplane appears on the screen. This interactive experience is facilitated through tablet scanning 
-         of markers, making learning engaging and effective. The app not only supports educators in their teaching process but also creates a stimulating learning environment, 
-         encouraging students' active participation and interest in their studies.
-      </p>
-      <img src="photos/StartScreen.png" height="200" width="300">
-      <!-- Add screenshots, videos, or a demo here -->
+         of markers, making learning engaging and effective. The app not only supports educators in their teaching process but also creates a stimulating learning environment, encouraging students' active participation and interest in their studies.
+        </p>
+      <img src="Pictures/aeroplane.jpg" height="200" width="300" style="border-radius: 10px;" >
     </div>
+    <button class="see-more-button">See More</button>
     </section>
     </a>
 
-    <a href="project3.html" target="_blank">
+    <a href="https://youtu.be/168xczxamo0" target="_blank">
     <section id="project4" class="project">
       <h3>Project 4: Test Animal AR</h3>
       <div class = "project-content">
         <p>
           The Augmented Reality Animal Interaction App is an innovative and engaging application that brings a variety of 3D animals to life through augmented reality technology.
            Users can interact with 12 different animals by pointing their device's camera at specific image targets, providing an immersive experience with realistic animations and behaviors.
-        </p>
-        <img src="photos/Elephant on elephant marker.png" height="200" width="300">
-        <!-- Add screenshots, videos, or a demo here -->
-      </div>
+          </p>
+        <img src="Pictures/rabbit pic.jpg" height="200" width="300" style="border-radius: 10px;" >
+      </div>      
+      <button class="see-more-button">See More</button>
     </section>
     </a>
 
-    <!--a href="project3.html" target="_blank"-->
+    <a href="https://youtu.be/NNhKd6J1nC0" target="_blank">
     <section id="project5" class="project">
       <h3>Project 5: Numeric AR App</h3>
       <div class="project-content">  
       <p>
        The Augmented Reality Numeric Interaction App is an innovative application that harnesses the power of augmented reality to facilitate interactive learning and creativity. 
-       This app enables users to create two-digit and one-digit numbers using 3D models corresponding to numeric digits. Users achieve this by placing two different image targets side by side,
-        which combine to form a two-digit number, or by using a single image target for one-digit numbers.          
+       This app enables users to create two-digit and one-digit numbers using 3D models corresponding to numeric digits. Users achieve this by placing two different image targets side by side, which combine to form a two-digit number, or by using a single image target for one-digit numbers.          
       </p>
-       <img src="photos/StartScreen.png" height="200" width="300">
-       <!-- Add screenshots, videos, or a demo here -->
-      </div>
+       <img src="Pictures/numeric app pic.jpg" height="200" width="300" style="border-radius: 10px;" >
+      </div>   
+      <button class="see-more-button">See More</button>
     </section>
-    <!--/a -->
+    </a >
 
-    <!--a href="project3.html" target="_blank"-->
+    <a href="https://youtu.be/JBdO1hhukHU" target="_blank">
       <section id="project6" class="project">
         <h3>Project 6: AR Birthday Card </h3>
         <div class="project-content">  
         <p>
-        This is a Augmented Reality app which used marker based technology to augment photos, videos and  3D models like cake. 
-        It can new way of whishong birthday or any celebration card where you can express yorn feeling in a new way.       
+        The "AR Birthday Card" is an augmented reality (AR) application that transforms traditional greeting cards into interactive and memorable experiences.
+         This project showcases expertise in marker-based AR technology, allowing users to augment photos, videos, and 3D models, such as birthday cakes, onto physical birthday cards. It introduces a creative and personalized way to convey heartfelt wishes and celebrate special occasions.    
         </p>
-         <img src="photos/StartScreen.png" height="200" width="300">
-         <!-- Add screenshots, videos, or a demo here -->
+         <img src="Pictures/birthday pic.jpg" height="200" width="300" style="border-radius: 10px;">                
         </div>
+        <button class="see-more-button">See More</button>
       </section>
-      <!--/a -->
+      </a >
 
-      <!--a href="project3.html" target="_blank"-->
+      <a href="https://youtu.be/rbxv_syxSPo" target="_blank">
         <section id="project7" class="project">
           <h3>Project 7: AR facts information with virtual buttons</h3>
           <div class="project-content">  
           <p>
-           In this auugmented reality app you can interact with differentkind of content with virtual button on it.
-          </p>
-           <img src="photos/StartScreen.png" height="200" width="300">
-           <!-- Add screenshots, videos, or a demo here -->
+            The "AR Facts Information with Virtual Buttons" is an innovative augmented reality (AR) application designed to provide an immersive and interactive learning experience.
+             This project showcases skills in developing AR applications that combine virtual buttons with informative video content. It offers users an engaging way to access educational information by simply interacting with virtual elements in the real world.
+            </p>
+           <img src="Pictures/AR Fact pic.jpg" height="200" width="300" style="border-radius: 10px;">                  
           </div>
+          <button class="see-more-button">See More</button>
         </section>
-        <!--/a -->
+        </a>
 
-        <!--a href="project3.html" target="_blank"-->
+        <a href="https://youtu.be/NVLTz6Ph0PI" target="_blank">
           <section id="project8" class="project">
             <h3>Project 8: AR Elephant Model </h3>
             <div class="project-content">  
             <p>
-              This is app where i try some animations of elephant on elephant marker which can follow a path. 
-              It goes like that when you tap on the screen it will start moving towards tree after entering in the area of tree it will sleep. 
-              again you tap on the screen now it will wake up and walking towards wall and when it hit the wall then it will die. 
+              The "AR Elephant Model" is a captivating augmented reality (AR) application that demonstrates creative and technical skills in AR development.
+               This project features an animated elephant that interacts with its environment based on user input.The elephant follows a predefined path, offering an engaging and visually appealing experience.
             </p>
-             <img src="photos/StartScreen.png" height="200" width="300">
-             <!-- Add screenshots, videos, or a demo here -->
+             <img src="Pictures/elephant.jpeg" height="200" width="300" style="border-radius: 10px;">          
             </div>
+            <button class="see-more-button">See More</button>
           </section>
-          <!--/a -->
+          </a>
 
-          <!--a href="project3.html" target="_blank"-->
+          <a href="https://youtu.be/tjJ-NJWXb9Q" target="_blank">
             <section id="project9" class="project">
               <h3>Project 9: AR Tap Object </h3>
               <div class="project-content">  
               <p>
-                This app is based on markar-less AR.what it does is very simple fist of all when you start the app
-                 it will scan the plane after that you tap on the screen a capsule 3D model with appears on the plane 
-                 and when ever you tap on the screen it with change the position in real time.
+                AR Tap Object" is an exciting augmented reality (AR) application that demonstrates expertise in marker-less AR technology. 
+                This project offers a straightforward yet engaging user experience. When users launch the app, it scans the environment 
+                for a suitable plane and then allows them to interact with a 3D capsule model by tapping on the screen. The model's position changes in real-time, creating an interactive and dynamic AR experience.                                  
               </p>
-               <img src="photos/StartScreen.png" height="200" width="300">
-               <!-- Add screenshots, videos, or a demo here -->
+              <img src="Pictures/tap object pic.jpg" height="200" width="300" style="border-radius: 10px;">
               </div>
-            </section>
-            <!--/a -->
+              <button class="see-more-button">See More</button>
+             </section>
+          </a >
     
   </section>
 
   <section id="skills">
     <h2>Skills and Technologies</h2>
+  <div class="text-box" id="color-change-box">
     <ul>
-      <li>Unity</li>
-      <li>C#</li>
-      <li>JavaScript</li>
-      <li>ARCore</li>
-      <li>Oculus</li>
-      <li>SteamVR</li>
-      <li>3D Modeling</li>
-      <li>Animation</li>
-      <li>UI/UX Design</li>
+      <li class ="item-box"><b>Software :</b> Unity3D, Visual Studio</li>
+      <li class ="item-box"><b>Lanuages :</b> C, C# ,Core Java, html, css </li>
+      <li class ="item-box"><b>AR Tools :</b> Vuforia, AR Foundation, ARCore</li>
+      <li class ="item-box"><b>VR Tools :</b> Oculus, SteamVR</li>
+      <li class ="item-box"><b>XR Technologies:</b> Augmented Reality, Virtual Reality, Mixed Reality</li>
+      <li class ="item-box"><b>Version Control :</b> Git, GitHub</li>
     </ul>
+  </div>
   </section>
 
   <section id="education">
     <h2>Education and Certifications</h2>
     <ul>
-      <li>Master of Computer Application, Mahatma Jyotiba Phule Rohilkhand University</li>
-      <li>Bachelor's of Science, Ram Manohar Lohia Avadh University Faizabad</li>
-      <li>Online Course: Build 15 Augmented Reality (AR) apps with Unity & Vuforia, Udemy</li>
+      <li class ="education-box">Master of Computer Application, Mahatma Jyotiba Phule Rohilkhand University</li>
+      <li class ="education-box">Bachelor's of Science, Ram Manohar Lohia Avadh University Faizabad</li>
+      <li class ="education-box">Online Course: Build 15 Augmented Reality (AR) apps with Unity & Vuforia, Udemy</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact Information</h2>
     <ul>
-      <li>Email: mohdanam786th@gmail.com</li>
-      <li>Website: <a href="https://www.example.com">www.example.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/mohd-anam-a306aa157/">Mohd Anam</a></li>
-      <li>Mobile no: +91 8887816322</li>
+      <li class ="contact-box">Email: mohdanam786th@gmail.com</li>
+      <li class ="contact-box">Mobile no: +91 8887816322</li>
+      <li class = "contact-box"> GitHub :<a href="https://github.com/MohdAnam"> github.com/MohdAnam</a></li>
+      <li class ="contact-box">LinkedIn: <a href="https://www.linkedin.com/in/mohd-anam-a306aa157/">Mohd Anam</a></li>
+      <li class ="contact-box">Portfolio: <a href="https://mohdanam.github.io">mohdanam.github.io</a></li>
+
     </ul>
   </section>
 
