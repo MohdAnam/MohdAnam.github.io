@@ -57,30 +57,34 @@ h1,h3,h4{ font-family: inherit; }
   display: flex;
   gap: 1.5rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
+
+/* limit row width and center it so columns behave predictably */
+.row { max-width: 1200px; width: 100%; margin: 0 auto; padding: 0 4vw; }
 
 .column-1 {
   margin-top: 0;
   padding: 1rem;
-  flex: 0 0 60%;
+  flex: 1 1 60%;
   max-width: 60%;
 }
 
 .column-1 h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-top: 0.5rem;
+  margin-top: 0;
   color: var(--primary-text-color);
 }
 
 .column-1 h1 span { color: rgb(225, 0, 255); }
 
 .column-2 {
-  flex: 0 0 35%;
-  max-width: 35%;
+  /* give column-2 a fixed image width so it stays right of the text on wide screens */
+  flex: 0 0 320px;
+  max-width: 320px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 1rem;
 }
@@ -89,7 +93,7 @@ h1,h3,h4{ font-family: inherit; }
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .image-container img {
@@ -117,7 +121,10 @@ h1,h3,h4{ font-family: inherit; }
 /* Section Styles */
 section { padding: 40px 1rem; }
 
-#projects { color: var(--primary-text-color); }
+#projects {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
 
 .project {
   background-size: cover;
@@ -236,4 +243,22 @@ footer { background-color:var(--heading-color); color: var(--primary-text-color)
 @media (min-width: 1200px) {
   .intro { min-height: 80vh; }
   .project { padding: 50px; }
+}
+
+/* Desktop: use grid for a reliable two-column layout and top alignment */
+@media (min-width: 769px) {
+  .intro { align-items: flex-start; }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 1.5rem;
+    align-items: start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4vw;
+  }
+  .column-1 { max-width: none; flex: none; }
+  .column-2 { flex: none; max-width: 320px; }
+  .image-container { justify-content: flex-end; align-items: flex-start; }
 }
