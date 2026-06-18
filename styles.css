@@ -64,8 +64,8 @@ h1,h3,h4{ font-family: inherit; }
 .column-1 {
   margin-top: 0;
   padding: 1rem;
-  flex: 1 1 420px;
-  max-width: 720px;
+  flex: 0 0 60%;
+  max-width: 60%;
 }
 
 .column-1 h1 {
@@ -77,7 +77,8 @@ h1,h3,h4{ font-family: inherit; }
 .column-1 h1 span { color: rgb(225, 0, 255); }
 
 .column-2 {
-  flex: 1 1 320px;
+  flex: 0 0 35%;
+  max-width: 35%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +94,7 @@ h1,h3,h4{ font-family: inherit; }
 
 .image-container img {
   max-width: 320px;
-  width: 100%;
+  width: 320px;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
