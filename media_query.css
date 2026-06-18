@@ -1,0 +1,32 @@
+/* 
+         
+            @media (max-width: 600px) {
+            
+            
+     
+            header {
+                background-color: #1a1a1a;
+                padding: 10px;
+                border-bottom: 1px solid #1a1a1a;
+                display: flex; 
+                /* Minimal helper media queries — main responsive rules are in styles.css
+                   This file can be used for additional breakpoint overrides if needed.
+                */
+
+                @media (max-width: 768px) {
+                  /* stack header and nav */
+                  header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+                  nav { justify-content: flex-start; padding-left: 0; gap: 12px; }
+                  .intro { padding: 1rem 0; }
+                  .column-1 h1 { font-size: 2rem; }
+                  .project-content { flex-direction: column; align-items: flex-start; }
+                  .project-content img { margin-left: 0; margin-top: 0.75rem; }
+                }
+
+                @media (min-width: 1200px) {
+                  .intro { min-height: 80vh; }
+                  .project { padding: 50px; }
+                }
+           
+
+            }
